@@ -1,0 +1,28 @@
+--Create a bookstore database
+
+CREATE TABLE My_Store(id INTEGER PRIMARY KEY, title TEXT, author TEXT, quantity INTEGER, aisle INTEGER, price INTEGER);
+
+INSERT into My_Store VALUES (1, "The Bible", "God", 1000, 7, 15);
+INSERT into My_Store VALUES (2, "Of Mice and Men", "John Steinbeck", 8, 2, 12);
+INSERT into My_Store VALUES (3, "Harry Potter and the Goblet of Fire", "JK Rowling", 4, 7, 13);
+INSERT into My_Store VALUES (4, "Love Does", "Bob Goff", 10, 7, 15);
+INSERT into My_Store VALUES (5, "Our Missing Hearts", "Celeste Ng", 20, 14, 18);
+INSERT into My_Store VALUES (6, "Radical", "David Platt", 15, 7, 12);
+INSERT into My_Store VALUES (7, "Single, Dating, Engaged, Married", "Ben Stuart", 25, 7, 14);
+INSERT into My_Store VALUES (8, "When Life Gives You Lululemons", "Lauren Weisberger", 4, 15, 22);
+INSERT into My_Store VALUES (9, "Why We Swim", "Bonnie Tsui", 6, 6, 20);
+INSERT into My_Store VALUES (10, "The Candy House", "Jennifer Egan", 9, 6, 23);
+INSERT into My_Store VALUES (11, "Harry Potter and the Sorcer's Stone", "JK Rowling", 10, 7, 13);
+INSERT into My_Store VALUES (12, "Harry Potter and the Chamber of Secrets", "JK Rowling", 15, 7, 13);
+INSERT into My_Store VALUES (13, "Harry Potter and the Prisoner of Azkaban", "JK Rowling", 23, 7, 13);
+INSERT into My_Store VALUES (14, "Harry Potter and the Deathly Hallows", "JK Rowling", 30, 7, 13);
+INSERT into My_Store VALUES (15, "Harry Potter and the Order of the Phoenix", "JK Rowling", 45, 7, 13);
+
+
+SELECT * FROM My_Store;
+
+--how many books do you have total?
+SELECT SUM(quantity) FROM My_Store;
+
+--displayed the database ordered by price
+SELECT * FROM My_Store ORDER BY (price);
